@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					963C96311EBC0F160036051D = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5D83J4N4K3;
 						ProvisioningStyle = Automatic;
 					};
 					963C96451EBC0F160036051D = {
@@ -426,10 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5D83J4N4K3;
 				INFOPLIST_FILE = VerticalMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SC.VerticalMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sctek.verticalMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -438,10 +443,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5D83J4N4K3;
 				INFOPLIST_FILE = VerticalMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SC.VerticalMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sctek.verticalMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -519,6 +528,7 @@
 				963C965C1EBC0F160036051D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963C965D1EBC0F160036051D /* Build configuration list for PBXNativeTarget "VerticalMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +537,7 @@
 				963C965F1EBC0F160036051D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963C96601EBC0F160036051D /* Build configuration list for PBXNativeTarget "VerticalMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +546,7 @@
 				963C96621EBC0F160036051D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

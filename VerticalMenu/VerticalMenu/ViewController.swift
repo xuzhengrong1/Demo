@@ -24,11 +24,18 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.red;
         }
         
-        memu.addButton("22", target: self, selector: #selector(test))
-        memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
+        memu.addButton("推荐11", target: self, selector: #selector(test))
+//        memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
+//            
+//        }
+        let btn = memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
             
         }
-        let btn = memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
+        let btn2 = memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
+            
+        }
+        
+        let btn3 = memu.addButton("11", backgroundColor: UIColor.red, textColor: UIColor.white, showDurationStatus: false) {
             
         }
         btn.drawSplitLine = false
