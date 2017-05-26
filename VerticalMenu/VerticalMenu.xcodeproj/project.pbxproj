@@ -18,6 +18,8 @@
 		963C96641EBC0F870036051D /* XZRHorizontalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963C96631EBC0F870036051D /* XZRHorizontalMenu.swift */; };
 		963C96661EBC13B10036051D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963C96651EBC13B10036051D /* UIView+Extension.swift */; };
 		963C96681EBC67D60036051D /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963C96671EBC67D60036051D /* TestButton.swift */; };
+		9661753C1ED7DC12003AC374 /* HeadScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661753B1ED7DC12003AC374 /* HeadScrollView.swift */; };
+		9661753E1ED80F6E003AC374 /* HeadScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9661753D1ED80F6E003AC374 /* HeadScrollView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		963C96631EBC0F870036051D /* XZRHorizontalMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZRHorizontalMenu.swift; sourceTree = "<group>"; };
 		963C96651EBC13B10036051D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		963C96671EBC67D60036051D /* TestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
+		9661753B1ED7DC12003AC374 /* HeadScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadScrollView.swift; sourceTree = "<group>"; };
+		9661753D1ED80F6E003AC374 /* HeadScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeadScrollView.xib; path = ../HeadScrollView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				963C96631EBC0F870036051D /* XZRHorizontalMenu.swift */,
 				963C96671EBC67D60036051D /* TestButton.swift */,
 				961E8C561ED6B2840063BF5B /* CustomDatePickerView.swift */,
+				9661753B1ED7DC12003AC374 /* HeadScrollView.swift */,
+				9661753D1ED80F6E003AC374 /* HeadScrollView.xib */,
 			);
 			path = VerticalMenu;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 				963C96401EBC0F160036051D /* LaunchScreen.storyboard in Resources */,
 				963C963D1EBC0F160036051D /* Assets.xcassets in Resources */,
 				963C963B1EBC0F160036051D /* Main.storyboard in Resources */,
+				9661753E1ED80F6E003AC374 /* HeadScrollView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9661753C1ED7DC12003AC374 /* HeadScrollView.swift in Sources */,
 				961E8C571ED6B2840063BF5B /* CustomDatePickerView.swift in Sources */,
 				963C96681EBC67D60036051D /* TestButton.swift in Sources */,
 				963C96381EBC0F160036051D /* ViewController.swift in Sources */,
