@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961E8C571ED6B2840063BF5B /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961E8C561ED6B2840063BF5B /* CustomDatePickerView.swift */; };
 		963C96361EBC0F160036051D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963C96351EBC0F160036051D /* AppDelegate.swift */; };
 		963C96381EBC0F160036051D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963C96371EBC0F160036051D /* ViewController.swift */; };
 		963C963B1EBC0F160036051D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963C96391EBC0F160036051D /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		961E8C561ED6B2840063BF5B /* CustomDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePickerView.swift; sourceTree = "<group>"; };
 		963C96321EBC0F160036051D /* VerticalMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963C96351EBC0F160036051D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		963C96371EBC0F160036051D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				963C96411EBC0F160036051D /* Info.plist */,
 				963C96631EBC0F870036051D /* XZRHorizontalMenu.swift */,
 				963C96671EBC67D60036051D /* TestButton.swift */,
+				961E8C561ED6B2840063BF5B /* CustomDatePickerView.swift */,
 			);
 			path = VerticalMenu;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961E8C571ED6B2840063BF5B /* CustomDatePickerView.swift in Sources */,
 				963C96681EBC67D60036051D /* TestButton.swift in Sources */,
 				963C96381EBC0F160036051D /* ViewController.swift in Sources */,
 				963C96641EBC0F870036051D /* XZRHorizontalMenu.swift in Sources */,

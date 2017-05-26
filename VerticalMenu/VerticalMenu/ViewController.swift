@@ -39,6 +39,10 @@ class ViewController: UIViewController {
             
         }
         btn.drawSplitLine = false
+        
+       let pick =  CustomDatePickerView(frame: CGRect(x: 0, y: 100, width: self.view.size.width, height:300))
+        
+        self.view.addSubview(pick)
 
     }
     
