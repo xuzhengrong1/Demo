@@ -18,13 +18,25 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      tableView = UITableView(frame: self.view.bounds, style: .plain)
+      tableView = UITableView(frame: self.view.frame, style: .plain)
         tableView?.delegate = self
         tableView?.dataSource = self;
                 tableView?.register( UITableViewCell.self, forCellReuseIdentifier: "cell")
        let View =  UINib(nibName: "HeadScrollView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! HeadScrollView
-        View.frame = CGRect(x: 0, y: 0, width: self.view.size.width, height: 231);
+        
+       
+//        CGRect rect = _blueView.frame;
+//        rect.origin.x += 37.5f;
+//        rect.origin.y += 80.0f;
+//        _blueView.frame = rect;
+        
+        var frame  = View.frame
+        frame.origin.x = 0
+        frame.origin.y = 0
+        frame.size.width = self.view.size.width
+        View.frame = frame
          View.headScrollView = tableView;
+        View.layoutSubviews()
         self.view.addSubview(View);
         self.view.addSubview(tableView!)
     

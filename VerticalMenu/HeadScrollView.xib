@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,29 +17,50 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7H-Ad-bWd">
                     <rect key="frame" x="0.0" y="0.0" width="336" height="105"/>
-                    <color key="backgroundColor" red="0.26472234678239148" green="0.2885969883419689" blue="0.21195315109614549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEl-Ed-jQj">
+                            <rect key="frame" x="0.0" y="-63" width="336" height="231"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88963325777202074" green="0.25423557238226879" blue="0.30347953174096365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="105" id="Obq-QW-As5"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsZ-dZ-fFo">
+                <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Xy-MG-UFs">
                     <rect key="frame" x="0.0" y="0.0" width="336" height="231"/>
-                    <color key="backgroundColor" red="0.82021581716718039" green="0.13051155753989463" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-iQ-Lxh">
+                            <rect key="frame" x="0.0" y="0.0" width="336" height="231"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="K4c-lu-FGQ">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="231"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="light"/>
+                        </visualEffectView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="P3T-iQ-Lxh" secondAttribute="trailing" id="J6u-Ad-7TG"/>
+                        <constraint firstItem="P3T-iQ-Lxh" firstAttribute="leading" secondItem="3Xy-MG-UFs" secondAttribute="leading" id="LuM-IA-wAm"/>
+                        <constraint firstItem="P3T-iQ-Lxh" firstAttribute="top" secondItem="3Xy-MG-UFs" secondAttribute="top" id="gVX-KQ-MTv"/>
+                        <constraint firstAttribute="bottom" secondItem="P3T-iQ-Lxh" secondAttribute="bottom" id="td8-ua-ltD"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="w7H-Ad-bWd" secondAttribute="trailing" id="2V7-9j-rfV"/>
-                <constraint firstItem="VsZ-dZ-fFo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FLK-Hn-0Za"/>
+                <constraint firstItem="3Xy-MG-UFs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FGt-zc-suw"/>
+                <constraint firstAttribute="bottom" secondItem="3Xy-MG-UFs" secondAttribute="bottom" id="YdV-2B-yy1"/>
                 <constraint firstItem="w7H-Ad-bWd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="deN-is-AQ1"/>
-                <constraint firstAttribute="bottom" secondItem="VsZ-dZ-fFo" secondAttribute="bottom" id="fBH-AV-YJk"/>
-                <constraint firstAttribute="trailing" secondItem="VsZ-dZ-fFo" secondAttribute="trailing" id="hGu-UR-IDA"/>
+                <constraint firstAttribute="trailing" secondItem="3Xy-MG-UFs" secondAttribute="trailing" id="gk2-hE-5fA"/>
                 <constraint firstItem="w7H-Ad-bWd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jTw-IH-QAc"/>
-                <constraint firstItem="VsZ-dZ-fFo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wp3-uW-UGi"/>
+                <constraint firstItem="3Xy-MG-UFs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mpi-14-uwf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="bottomView" destination="VsZ-dZ-fFo" id="Sui-Vp-zJ1"/>
+                <outlet property="bottomView" destination="3Xy-MG-UFs" id="MNh-gj-QD1"/>
                 <outlet property="topView" destination="w7H-Ad-bWd" id="cX7-nA-QiK"/>
             </connections>
             <point key="canvasLocation" x="-119" y="-78.5"/>
